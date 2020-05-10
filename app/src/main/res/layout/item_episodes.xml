@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/episodesSeason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="S. 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/episodesNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Ep. 1"
+        app:layout_constraintStart_toEndOf="@+id/episodesSeason"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/episodesName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxWidth="200dp"
+        android:text="episode Name"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toStartOf="@+id/episodesDate"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toEndOf="@+id/episodesNumber"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/episodesDate"
+        android:layout_width="80dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="10dp"
+        android:text="20 Dec 2019"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

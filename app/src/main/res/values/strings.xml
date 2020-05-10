@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MySeries</string>
+    <string name="sign_in">Sign in</string>
+
+
+    <string name="sign_up">Sign up</string>
+    <string name="password">Password</string>
+    <string name="e_mail">E-mail</string>
+    <string name="register">Register</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="name">Название</string>
+    <string name="duration">Release date: </string>
+    <string name="description">Description</string>
+    <string name="episodes">Episodes</string>
+    <string name="sername">Название сериала</string>
+    <string name="staring">Staring: </string>
+    <string name="creators">Creators: </string>
+    <string name="title">title</string>
+    <string name="message">message</string>
+    <string name="catalogue">Catalogue</string>
+    <string name="my_series">Мy Series</string>
+    <string name="schedule">Schedule</string>
+    <string name="notify">Notify</string>
+</resources>

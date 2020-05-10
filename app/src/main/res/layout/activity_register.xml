@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Activity.RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white"
+        tools:layout_editor_absoluteX="16dp">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/emailR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:hint="@string/e_mail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.035"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/passwordR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/emailR"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/passwordR"
+        tools:layout_editor_absoluteX="47dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        app:layout_constraintTop_toBottomOf="@+id/password2"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <Button
+            android:id="@+id/registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="@color/colorAccent"
+            android:gravity="center"
+            android:text="@string/register"
+            app:layout_constraintTop_toBottomOf="@+id/password2"
+            tools:layout_editor_absoluteX="161dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

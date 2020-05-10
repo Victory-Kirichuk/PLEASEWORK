@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/seriesName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+
+            android:maxWidth="150dp"
+            android:text="@string/sername"
+            android:textSize="15sp"
+            android:textStyle="italic|bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/seriesSeason"
+            android:layout_width="30dp"
+            android:layout_height="19dp"
+
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/epName" />
+
+        <TextView
+            android:id="@+id/seriesEpisode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/episodes"
+            app:layout_constraintStart_toEndOf="@+id/seriesSeason"
+            app:layout_constraintTop_toBottomOf="@+id/epName" />
+
+        <TextView
+            android:id="@+id/seriesData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="55555"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.924"
+            app:layout_constraintStart_toEndOf="@+id/seriesName"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp"
+            tools:srcCompat="@tools:sample/avatars[15]" />
+
+        <TextView
+            android:id="@+id/epName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+
+            android:maxWidth="220dp"
+            android:text="EpisodeName"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/seriesName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

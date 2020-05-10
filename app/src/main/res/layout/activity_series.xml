@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.SeriesActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/buttonImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginEnd="10dp"
+            android:background="?android:selectableItemBackground" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/seriesImage"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/releaseD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <TextView
+            android:id="@+id/season"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Seasons: "
+            android:textAlignment="center"
+
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/seriesSeason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearDate"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintTop_toBottomOf="@+id/releaseD">
+
+
+        <TextView
+            android:id="@+id/dateS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/duration"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/seriesDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/descriptionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/actorsLayout"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:textAlignment="center"
+            android:textSize="20sp"
+
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/seriesDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/episodes"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutName"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/seriesGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="genre"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutProducer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearDate"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/creators"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/creators"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/seriesProducers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/actorsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutProducer"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/staring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/staring"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/seriesActors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <TextView
+            android:id="@+id/seriesName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/name"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="italic|bold"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="262dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/episodes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="@string/episodes"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionLayout"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

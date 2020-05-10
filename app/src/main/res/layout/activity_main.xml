@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="200dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/searchButton"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_search_black_24dp"
+                android:background="?android:selectableItemBackground"/>
+
+            <ImageButton
+                android:id="@+id/logout"
+                android:layout_width="40dp"
+                android:layout_marginStart="100dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/exit"
+                android:background="?android:selectableItemBackground"/>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="70"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_gravity="center"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_menu"/>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/logout"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="?android:selectableItemBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/exit" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

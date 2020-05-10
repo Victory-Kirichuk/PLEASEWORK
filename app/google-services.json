@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "782771960082",
+    "firebase_url": "https://pleasework-707d2.firebaseio.com",
+    "project_id": "pleasework-707d2",
+    "storage_bucket": "pleasework-707d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782771960082:android:ea7ce1b46a944dcfa41bcb",
+        "android_client_info": {
+          "package_name": "com.example.pleasework"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782771960082-s0fki5lj67nthbq1vln04asidiivmeb9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pleasework",
+            "certificate_hash": "9777dca2489e127178b3ca184a3c936b304200c6"
+          }
+        },
+        {
+          "client_id": "782771960082-cgtfhqp1o1oc0uhf2st2t4omrp8bq3he.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlRnIYpzjpk4noCKyiIAgP-GhBC9jMR0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "782771960082-cgtfhqp1o1oc0uhf2st2t4omrp8bq3he.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
