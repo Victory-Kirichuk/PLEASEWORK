@@ -11,12 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        
+
         <activity
             android:name=".Activity.RegisterActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.EpisodeNotifyActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Activity.LoginActivity"

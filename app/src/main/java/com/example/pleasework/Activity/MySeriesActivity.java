@@ -81,6 +81,9 @@ public class MySeriesActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         onBackPressed();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
         return super.onOptionsItemSelected(item);
     }
 }

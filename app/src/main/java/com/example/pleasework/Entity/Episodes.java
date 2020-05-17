@@ -10,6 +10,10 @@ public class Episodes implements Comparable<Episodes> {
     @SerializedName("seriesId")
     @Expose
     private Integer seriesId;
+    @SerializedName("Id")
+    @Expose
+    private Integer Id;
+
 
     @SerializedName("name")
     @Expose
@@ -67,8 +71,17 @@ public class Episodes implements Comparable<Episodes> {
         this.season = season;
     }
 
-    public int compareTo(Episodes episodes){
+    public int compareTo(Episodes episodes) {
         return date.compareTo(episodes.date);
+
+    }
+
+    public Integer getId() {
+        return Id;
+    }
+
+    public void setId(Integer id) {
+        Id = id;
     }
 
 }

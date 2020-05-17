@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class NetworkService {
     private static NetworkService instance;
-    private static final String URL = "http://192.168.42.222:8080";
+    private static final String URL = "http://192.168.0.101:8080";
     private Retrofit retrofit;
 
     private NetworkService(){

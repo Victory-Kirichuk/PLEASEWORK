@@ -58,6 +58,7 @@
         android:id="@+id/bottomNavig"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         app:menu="@menu/bottom_menu"/>
 
 </LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.pleasework.Network;
 
+import com.example.pleasework.Entity.Episodes;
 import com.example.pleasework.Entity.Series;
 import com.example.pleasework.Entity.Timetable;
 
@@ -9,7 +10,6 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
-import rx.Observable;
 
 public interface JSONPlaceHolderApi {
 
@@ -26,8 +26,13 @@ public interface JSONPlaceHolderApi {
     @GET("/series/getMy/{email}")
     public Call<List<Series>> getMy(@Path("email") String email);
 
+     @GET("/episodes/getEpById/{episodeId}")
+     public Call<Timetable> getEpByEpisodeId(@Path("episodeId") Integer episodeId);
+
     @GET("/episodes/timeTable/{email}")
     public Call<List<Timetable>> getTimeTable(@Path("email") String email);
+    @GET("/episodes/timeTableToday/{email}")
+    public Call<List<Timetable>> getTimeTableToday(@Path("email") String email);
 
     @POST("/notification/add/{id}/{email}")
     public Call<Boolean> addNotification(@Path("id") Integer id, @Path("email") String email);

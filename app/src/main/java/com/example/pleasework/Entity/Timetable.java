@@ -11,6 +11,10 @@ public class Timetable {
     @Expose
     private Integer seriesId;
 
+@SerializedName("episodeId")
+@Expose
+private Integer episodeId;
+
     @SerializedName("seriesName")
     @Expose
     private String seriesName;
@@ -88,5 +92,13 @@ public class Timetable {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public Integer getEpisodeId() {
+        return episodeId;
+    }
+
+    public void setEpisodeId(Integer episodeId) {
+        this.episodeId = episodeId;
     }
 }
